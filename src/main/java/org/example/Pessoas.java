@@ -39,4 +39,16 @@ public class Pessoas {
     public void setEnderecos(List<Enderecos> enderecos) {
         this.enderecos = enderecos;
     }
+
+    public void visualizarDados() {
+        System.out.println("Dados");
+        System.out.println("Nome: " + nome + " Idade: " + idade);
+        System.out.println("Endereços: ");
+        for (Enderecos endereco : enderecos) {
+            System.out.println("Rua: " + endereco.getRua() + " Número: " + endereco.getNumero());
+            System.out.println("------------------------- ");
+        }
+    }
+
+
 }
